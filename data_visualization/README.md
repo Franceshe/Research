@@ -16,8 +16,16 @@ providing API, abstraction, caching
 
 ### Setting up a Database and Cube.js
 * tips: you might need to reconfig for cube.js installation:
-`sudo chown -R $USER /usr/local/lib/node_modules`
-
+... `sudo chown -R $USER /usr/local/lib/node_modules`
+* tips: add environment variable to `.env`:
+`
+1| CUBEJS_DB_USER=xxxxxxxx
+2| CUBEJS_API_SECRET=SECRET
+3| CUBEJS_DB_TYPE=postgres
+4| CUBEJS_DB_NAME=ecom
+5| CUBEJS_WEB_SOCKETS=true
+6| CUBEJS_DB_PASS=xxxxxxxxx
+`
 ### Building a Frontend Dashboard
 ### Adding interactivity
 
