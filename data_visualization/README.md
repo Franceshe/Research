@@ -15,6 +15,9 @@ providing API, abstraction, caching
 3. react with Material UI, D3 for chart rendering
 
 ### Setting up a Database and Cube.js
+* tips: you might need to reconfig for cube.js installation:
+`sudo chown -R $USER /usr/local/lib/node_modules`
+
 ### Building a Frontend Dashboard
 ### Adding interactivity
 
