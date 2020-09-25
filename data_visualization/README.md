@@ -31,3 +31,4 @@ providing API, abstraction, caching
 
 # Reference
 * [D3 dashboard](https://d3-dashboard.cube.dev/)
+* simulate in [codesandbox](https://codesandbox.io/s/6g8pb?file=/index.js)
