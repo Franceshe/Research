@@ -1,0 +1,23 @@
+# Software Design
+* It comes to while glacning through Alan Kay's claim on small talk.
+"Smalltalk is object-oriented, but it should have been message oriented."
+* [ref: Creative Think, Author:	Andy Hertzfeld, Summary:A seminar with Alan Kay](https://www.folklore.org/StoryView.py?project=Macintosh&story=Creative_Think.txt)
+## Message Passing vs Object Oriented:
+1. Proposal:
+* Traditional procedural APIs are rigid and slow down development.
+* Better instead to use a message-passing approach.
+
+### Example:
+* Example: simple game program. Moves "sprites" in one dimension, checks for collisions.
+
+..* game1.cc: initial implementation using traditional OOP.
+..* game2.cc: reimplemented using messages.
+..* game1a.cc: game1.cc restructured to hold all sprites in a single object.
+ ..* game2a.cc: game2.cc restructured to hold all sprites in a single object.
+
+### Claims:
+* The message passing version has no APIs or dependencies
+* Easier to make changes with the message passing approach; 
+e.g., Game class didn't change at all in game2a.cc
+* Shouldn't define APIs before you know how you're going to use them
+The message-based approach works even better with larger systems
