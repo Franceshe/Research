@@ -10,10 +10,10 @@
 ### Example:
 * Example: simple game program. Moves "sprites" in one dimension, checks for collisions.
 
-... game1.cc: initial implementation using traditional OOP.
-... game2.cc: reimplemented using messages.
-... game1a.cc: game1.cc restructured to hold all sprites in a single object.
-... game2a.cc: game2.cc restructured to hold all sprites in a single object.
+- [ ] game1.cc: initial implementation using traditional OOP.
+- [ ] game2.cc: reimplemented using messages.
+- [ ] game1a.cc: game1.cc restructured to hold all sprites in a single object.
+- [ ] game2a.cc: game2.cc restructured to hold all sprites in a single object.
 
 ### Claims:
 * The message passing version has no APIs or dependencies
