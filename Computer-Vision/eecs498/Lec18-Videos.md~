@@ -1,0 +1,7 @@
+# Today, Video = 2d+ time
+
+* A video is a sequence of images, 4D tensor: Tx3xHxW
+4D tensors: T X           3            x   H  x W
+            |             |                   | 
+		time(temporal) color Channel:    two spacial dimention
+		                R,G,B
