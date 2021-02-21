@@ -7,7 +7,11 @@
 * workload
 * A huge assumption for following scheduling algorihtm: 
   - perform one task at a time
-  
+* assumption3: Jobs do no I/O
+* assumption4: run-time of each job is known.
+* By relaxing the above assumptions, we proposed algorithm/solution to address
+the problems.
+
 ### Measuring metric
 * Performance metric:
   - turnaround time:
@@ -47,7 +51,15 @@ is turnaround time.
  ### Cost of Context Switch(A very interersting but oftern neglected point)
  * Note that the cost of context switching does not arise solely from the OS actions of saving and restoring a few registers. When programs run,they build up a great deal of state in CPU caches, TLBs, branch predictors, and other on-chip hardware. Switching to another job causes this state to be flushed and new state relevant to the currently-running job to be brought in, which may exact a noticeable performance cost [MB91].
 
- 
+
+## Incorporating I/O
+* A scheduler clearly has a decision to make when a job initiates an I/O request
+* NOTICE the currently-running job won’t be using the CPU during the I/O; it is blocked waiting for I/O completion
+* How should the OS treat each job?
+  - TIP: OVERLAP ENABLES HIGHER UTILIZATION
+  - "overlap" allowss the CPU while being used by one process, while waiting for the I/O of another process to complete.
+  
+  
 ## Jargon
 * batch computing
 * preemptiive scheduler -> which indicate context swtich is pretty used for schedulers.
