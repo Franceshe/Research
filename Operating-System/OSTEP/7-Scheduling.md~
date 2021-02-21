@@ -1,0 +1,13 @@
+# Scheduling Introduction:
+
+
+## Basic framework and metric about scheduling
+
+### Key assumptions
+* workload
+
+### Measuring metric
+* Performance metric:
+  - turnaround time
+  
+* Fairness metric(as measured (for example) by Jain’s Fairness Index)
