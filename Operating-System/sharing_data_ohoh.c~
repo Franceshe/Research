@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <pthread.h>
+#include "mythreads.h"
+
+/* 
+Why thread make things worse: Sharing Data
+*/
+static volatile int counter = 0;
+
+//
+// my thread()
+//
+// Simply adds 1 to counter repeatedly, in a loop
+// No, this is not how you would add 10, 000, 000 to
+// a counter, but it show the problem nicely.
+
+
