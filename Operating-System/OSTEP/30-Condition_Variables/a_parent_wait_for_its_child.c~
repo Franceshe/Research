@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <pthread.h>
+#include "mythreads.h"
+
+volative int done = 0;
+
+void *child(void *arg){
+    printf("child\n");
+    // XXX how to indicate we are done?
+    done = 1;
+    return NULL;
+}
+
+int main(int argc, char *argv[]){
+    printf("parent: begin\n");
+    pthread_t c;
+    Pthread_create(&c, NULL, child, NULL); //create child
+    // how should XXX wait for a child;
+    while(done == 0)
+	; //spin
+    printf("parent : end\n");
+    return 0;
+}

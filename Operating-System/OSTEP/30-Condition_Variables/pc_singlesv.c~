@@ -1,0 +1,8 @@
+cond_t cond;
+mutex_t mutex;
+
+void *producer(void *arg){
+    int i;
+    for(i = 0; i < loops; i++)
+
+}
