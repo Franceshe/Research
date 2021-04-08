@@ -11,3 +11,6 @@
 ### Textbook
 * [Computer Architecture, A Quantitative Approach, Patterson and Hennessy, 5th edition].
 * [Modern Processor Design Fundamentals of Super-Scalar Processors]
+
+## Prereq
+* A computer organization class like UIUC CS233
