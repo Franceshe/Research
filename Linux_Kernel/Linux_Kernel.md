@@ -1,7 +1,8 @@
-## Ref:
+## Ref: 
 * 
 [CS241 Honor Topic: The Linux Kernel](http://cs241.cs.illinois.edu/coursebook/Honors#the-linux-kernel)
-* [Linux Kernel Development: 3rd edition, Robert Love]
+* [Linux Kernel Development: 3rd edition, Robert Love]: Chapter13:The Virtual Filesystem - p261-p288
+* [CSAPP: Chapter 9 Virtual Memory]
 
 ## The following are notes and thoughts after reading CS241 Honor Topic: The Linux Kernel
 ## The Linux Kernel:
@@ -44,9 +45,9 @@ as network stack is less critical than paging in the perspective of system progr
 the IPC overhead.
 ... Would same result applied to RISC at such disadvantage?
 
-
 ## System Call Demystified
-* 
+## Containerization
+## Linux Namespaces
 
 
 
