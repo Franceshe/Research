@@ -3,3 +3,6 @@
 
 # Visual Computing:
 * [CS348K: Visual Computing system, papers and reading](https://github.com/stanford-cs348k/readings)
+
+## Concepts
+* [Embarrassingly parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel)
