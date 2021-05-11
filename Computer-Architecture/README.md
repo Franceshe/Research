@@ -2,6 +2,7 @@
 
 ## Hardware for Machine Learning:
 * [EE290-2, Spring 2021: Hardware for Machine Learning](https://inst.eecs.berkeley.edu/~ee290-2/sp21/)
+* [Stanford: Hardware Accelerators for Machine Learning](https://cs217.stanford.edu/)
 
 ## New Golden age for computer architecture:
 * [A New Golden Age for Computer Architecture with Dave Patterson](https://learning.acm.org/techtalks/computerarchitecture)
