@@ -1,7 +1,11 @@
 # Inspiration
-* [A New Golden Age for Computer Architecture with Dave Patterson](https://learning.acm.org/techtalks/computerarchitecture)
+
+## Hardware for Machine Learning:
+* [EE290-2, Spring 2021: Hardware for Machine Learning](https://inst.eecs.berkeley.edu/~ee290-2/sp21/)
 
 ## New Golden age for computer architecture:
+* [A New Golden Age for Computer Architecture with Dave Patterson](https://learning.acm.org/techtalks/computerarchitecture)
+
 ### Part1: History of architecture- Mainframes, Minicomputers, Microprocessors, RISC vs CISC, VLIW
 * Mini computer and main frames
 * Microprocessors
@@ -50,9 +54,15 @@
 1. Why open source compilers and operating systems but not ISAs?
 2. What if where were free and open ISAs we could use for everything.
 
+### Use machine learning to design computer architecture
+* Cliff Young: how to design machines better for use machine learning.
+
 ### Reference:
 * [John Hennessy and David Patterson 2017 ACM A.M. Turing Award Lecture](https://www.youtube.com/watch?v=3LVeEjsn8Ts&t=387s&ab_channel=AssociationforComputingMachinery%28ACM%29)
+
 #### RISC-V
+* Lessons learn from the battle of CISC vs RISC war:
+... Don't seperate the hardware and software, think it as integrated fashion.
 
 ## Resource
 * [Coursera: Advanced Computer Architecture](https://www.coursera.org/learn/comparch)
@@ -66,3 +76,4 @@
 
 ## Prereq
 * A computer organization class like UIUC CS233
+
