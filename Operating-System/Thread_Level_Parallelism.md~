@@ -1,0 +1,72 @@
+# Thread Level Parallelism
+
+
+* Hyperthreading isn't helping us.
+
+## Example1: psum
+* Eg: sum 1-n by using multireads(cores) as psum-mutex
+* Nasty surprise:
+... Single thread is very slow.
+... Gets slower as we use more thread(cores)
+... Why? Because locking and unlocking is very time-consuming task
+... Miserable performance loss for cache, basically all caches are
+fighting for increment memory control
+
+### Lesson1: Semaphores or mutexes are very expensive
+* Since they are expensive, when you are doing low level parallel operations,
+you don't want fine-grained locking at that level
+* For more details, check "lock free synchronization", in which condition avioid 
+to use semaphores to get same effect and examples where you expect relatively little 
+contention btw threads
+
+### Alternative design1  -> for psum: psum-array
+* Instead of let threads fights for a single global variable, each thread only increments
+and element of array
+* we will get better performance by moving to private states, for stuff get most access to 
+
+### Alternative design2 -> for psum: psum-local:
+* it's generally bad to be accumulating into a memory.(accumulating in memory is slower 
+than in register)
+* alternative: accumulating in memory and update the memory when you are done with registers.
+
+## Amdahl's Law
+* The Amdahl's Law gives perceptive point about what's possible benifits of speeding up something
+* IMPORTANT: this isn't just for computers, but any process that you want to speed up.
+* Insignt: The part of your system that you can't speed up will  becomes your bottleneck
+
+### Amdahl's Law for parallel programming:
+* The oart of it that's still running sequentially will come to limit the ultimate performance
+
+## Example2: Parallel Quicksort
+### Thread structure: Sorting tasks
+* Need non trivail amount of code
+* note for small sort task opeartion:
+... Once get down to array being small enough, we will just sort it sequentially
+... How big that block is ir not is actually a performance parameter for tuning 
+the system
+... The point is you don't want to get array too small for the overhead of threads
+cost for over fined grained tuning.
+
+### a typical way of writing threaded code:
+* First have a bunch of pool of threads
+* the initiation of a thread is a non-trivial amount of computation
+* Given specific cores -> create thread pool -> each work by sharing a task queu
+e.
+
+### Performance measure benchmark
+* For sequential code, one might used to measure performance based on CPU time.
+* That's not useful for parallel computing -> Use "elapsed time"(the time need to 
+complete the whole process)
+
+## General Lesson
+### Must have parallel strategy
+* Partition into K independent parts
+* Divide-and-Conquer strategy, where you can keep splits it, but the two splits that
+you create out of can go concurrently.
+### Inner loops must be synchronization free
+* Synchronization operations very expensive
+### Beware of Amdahl's Law:
+* Serial code can become bottleneck
+### You can do it!
+* Achieving modest levels of parallelism is not difficult
+* Set of experimental framework and test multiple strategies.
