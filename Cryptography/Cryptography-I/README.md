@@ -1,0 +1,23 @@
+# Cryptography I 
+## Course Overview:
+* Cryptography is an indispensable tool for protecting information in computer systems. 
+* This course explains the inner workings of cryptographic primitives and how to correctly use them. 
+Participants will learn how to reason about the security of cryptographic constructions and how to apply 
+this knowledge to real-world applications.
+* The course begins with a detailed discussion of how two parties who have a shared secret key can communicate
+securely when a powerful adversary eavesdrops and tampers with traffic. We will examine many deployed protocols
+and analyze mistakes in existing systems. The second half of the course discusses public-key techniques that 
+let two parties generate a shared secret key. We will cover the relevant number theory and discuss public-key
+encryption and basic key exchange. Throughout the course participants will be exposed to many exciting open 
+problems in the field and work on fun (optional) programming projects.  
+* In a second course (Crypto II) we will cover more advanced cryptographic tasks such as 
+  * zero-knowledge 
+  * privacy mechanisms
+  * and other forms of encryption. 
+
+## Reference:
+## Links to free resources to supplement the lectures:
+
+* Background on discrete probability: [html]
+* A course in applied cryptography: [html]
+* Computational number theory: [pdf]
