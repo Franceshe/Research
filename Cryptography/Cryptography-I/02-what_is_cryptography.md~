@@ -1,0 +1,15 @@
+## 02-What is Cryptography?
+
+## Crypto Core
+* how to set up "secure key establishment"
+* how to set up "secure comminication" once we have the shared key
+
+## More crypto can do:
+* Digital signature:
+  * not viable as reall world signature: get one copy and paste the rest
+  * make it via function of the content being signed
+* Anonymous communication(mixnet):
+  * further application involes Anonymous digital cash(eg.bitcoin):
+	* Can I spend a "digital coin" without anyone knowing who I am as the
+	way we spend in real world cash.
+	* How to prevent double spending?(since digital cash is easy to copy)
